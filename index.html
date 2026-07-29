@@ -1,133 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+<!-- ==========================================================
+LEGENDARY GITHUB PORTFOLIO
+PART 1
+Continue exactly from the last line in the next response.
+=========================================================== -->
 
 <meta charset="UTF-8">
-
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Vivek PK | Software Developer & Cybersecurity Enthusiast
-</title>
+<!-- =========================
+EDITABLE SECTION
+========================= -->
 
+<!-- CHANGE THESE -->
+<title>Vivek PK | Portfolio</title>
 
-<meta name="description"
-content="Vivek PK - BCA Student, Software Developer, Python Programmer and Cybersecurity Enthusiast creating innovative technology solutions.">
+<meta name="description" content="Professional Portfolio of Vivek PK - Python Developer | Cybersecurity Enthusiast | AI Learner">
 
+<meta name="keywords" content="Portfolio,Python,Cybersecurity,Developer,GitHub,AI,Data Science">
 
 <meta name="author" content="Vivek PK">
 
+<meta name="theme-color" content="#00E5FF">
 
-<meta name="keywords"
-content="Vivek PK, Developer, Python, Cybersecurity, Portfolio, BCA">
+<link rel="canonical" href="https://YOUR_USERNAME.github.io/">
 
+<meta name="robots" content="index,follow">
 
 <!-- Open Graph -->
 
-<meta property="og:title"
-content="Vivek PK | Futuristic Developer Portfolio">
+<meta property="og:title" content="Vivek PK Portfolio">
+<meta property="og:description" content="Professional Developer Portfolio">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/profile.jpg">
+<meta property="og:url" content="https://YOUR_USERNAME.github.io/">
 
-<meta property="og:description"
-content="A futuristic AI-powered developer portfolio.">
+<!-- Twitter -->
 
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Vivek PK Portfolio">
+<meta name="twitter:description" content="Professional Portfolio">
+<meta name="twitter:image" content="assets/profile.jpg">
 
-<meta property="og:type"
-content="website">
+<!-- Favicon -->
 
+<link rel="icon"
+href="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f680.svg">
 
-<!-- Theme -->
+<!-- Manifest -->
 
-<meta name="theme-color" content="#050505">
+<link rel="manifest"
+href="data:application/manifest+json,{
+'name':'Portfolio',
+'short_name':'Portfolio',
+'display':'standalone',
+'background_color':'#000000',
+'theme_color':'#00E5FF'
+}">
 
+<!-- Schema.org -->
 
-<!-- Fonts -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"Person",
+"name":"Vivek PK",
+"url":"https://YOUR_USERNAME.github.io",
+"image":"assets/profile.jpg",
+"jobTitle":"Software Developer",
+"sameAs":[
+"https://github.com/YOUR_USERNAME",
+"https://linkedin.com/in/YOUR_USERNAME"
+]
+}
+</script>
+
+<!-- Google Fonts -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
-rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 <!-- Icons -->
 
-<link rel="stylesheet"
+<link
+rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 
 <style>
 
-
-/* =====================================
-GLOBAL VARIABLES
-===================================== */
-
+/*=================================================
+ROOT VARIABLES
+=================================================*/
 
 :root{
 
 --primary:#00E5FF;
-
 --secondary:#7B61FF;
-
 --accent:#00FF99;
 
---dark:#050505;
-
---card:rgba(255,255,255,0.08);
+--bg:#040404;
+--bg2:#090909;
+--glass:rgba(255,255,255,.08);
+--glass-border:rgba(255,255,255,.15);
 
 --text:#ffffff;
+--muted:#bdbdbd;
 
---gray:#bdbdbd;
+--radius:20px;
 
---transition:0.4s ease;
+--transition:.35s ease;
+
+--shadow:
+0 0 20px rgba(0,229,255,.18);
 
 }
 
+/* Light Theme */
 
-/* =====================================
+body.light{
+
+--bg:#f8f8f8;
+--bg2:#ffffff;
+
+--text:#101010;
+--muted:#555;
+
+--glass:rgba(255,255,255,.6);
+
+}
+
+/*=================================================
 RESET
-===================================== */
-
+=================================================*/
 
 *{
-
 margin:0;
-
 padding:0;
-
 box-sizing:border-box;
-
 }
-
 
 html{
-
 scroll-behavior:smooth;
-
 }
-
 
 body{
 
-font-family:'Outfit',sans-serif;
+font-family:"Inter",sans-serif;
 
-background:var(--dark);
+background:var(--bg);
 
-color:white;
+color:var(--text);
 
 overflow-x:hidden;
 
+line-height:1.7;
+
 }
 
+/*=================================================
+SCROLLBAR
+=================================================*/
 
+::-webkit-scrollbar{
+width:10px;
+}
 
-/* =====================================
-BACKGROUND EFFECT
-===================================== */
+::-webkit-scrollbar-thumb{
 
+background:linear-gradient(
+180deg,
+var(--primary),
+var(--secondary)
+);
+
+border-radius:50px;
+
+}
+
+/*=================================================
+SELECTION
+=================================================*/
+
+::selection{
+
+background:var(--primary);
+
+color:#000;
+
+}
+
+/*=================================================
+ANIMATED BACKGROUND
+=================================================*/
 
 body::before{
 
@@ -139,131 +208,130 @@ inset:0;
 
 background:
 
-radial-gradient(
-circle at top left,
+radial-gradient(circle at 10% 20%,
 rgba(0,229,255,.15),
-transparent 35%
-),
+transparent 35%),
 
-radial-gradient(
-circle at bottom right,
+radial-gradient(circle at 80% 30%,
 rgba(123,97,255,.18),
-transparent 40%
-),
+transparent 35%),
 
-radial-gradient(
-circle,
-rgba(0,255,153,.08),
-transparent 35%
-);
+radial-gradient(circle at 50% 90%,
+rgba(0,255,153,.15),
+transparent 35%);
 
+animation:bgMove 15s infinite alternate;
 
-z-index:-2;
+z-index:-3;
 
 }
 
+@keyframes bgMove{
 
+0%{
 
-.grid-background{
+transform:
+translate(0,0)
+scale(1);
+
+}
+
+100%{
+
+transform:
+translate(-50px,-40px)
+scale(1.25);
+
+}
+
+}
+
+/*=================================================
+GRID OVERLAY
+=================================================*/
+
+.grid{
 
 position:fixed;
 
 inset:0;
 
+background:
 
-background-image:
+linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
 
-linear-gradient(
-rgba(255,255,255,.03) 1px,
-transparent 1px
-),
-
-linear-gradient(
-90deg,
-rgba(255,255,255,.03) 1px,
-transparent 1px
-);
-
+linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
 
 background-size:50px 50px;
 
+z-index:-2;
 
-z-index:-1;
-
-}
-
-
-
-/* =====================================
-SCROLLBAR
-===================================== */
-
-
-::-webkit-scrollbar{
-
-width:10px;
+pointer-events:none;
 
 }
 
+/*=================================================
+CURSOR GLOW
+=================================================*/
 
-::-webkit-scrollbar-thumb{
+.cursor{
+
+width:18px;
+height:18px;
+
+border-radius:50%;
+
+background:var(--primary);
+
+position:fixed;
+
+left:0;
+top:0;
+
+pointer-events:none;
+
+filter:blur(2px);
+
+transform:translate(-50%,-50%);
+
+z-index:99999;
+
+mix-blend-mode:screen;
+
+}
+
+/*=================================================
+SCROLL PROGRESS
+=================================================*/
+
+.progress{
+
+position:fixed;
+
+top:0;
+left:0;
+
+height:4px;
+
+width:0;
 
 background:
 
 linear-gradient(
+90deg,
 var(--primary),
 var(--secondary)
 );
 
-border-radius:20px;
+z-index:99999;
 
 }
 
+/*=================================================
+LOADER
+=================================================*/
 
-
-/* =====================================
-CONTAINER
-===================================== */
-
-
-.container{
-
-width:min(1200px,92%);
-
-margin:auto;
-
-}
-
-
-
-/* =====================================
-GLASS EFFECT
-===================================== */
-
-
-.glass{
-
-background:var(--card);
-
-backdrop-filter:blur(20px);
-
-border:
-
-1px solid rgba(255,255,255,.12);
-
-
-border-radius:25px;
-
-}
-
-
-
-/* =====================================
-LOADING SCREEN
-===================================== */
-
-
-#loader{
+.loader{
 
 position:fixed;
 
@@ -279,91 +347,71 @@ align-items:center;
 
 flex-direction:column;
 
-z-index:9999;
+gap:20px;
+
+z-index:999999;
+
+transition:1s;
 
 }
 
+.loader.hidden{
 
-.loader-name{
+opacity:0;
 
-font-size:3rem;
-
-font-weight:800;
-
-
-background:
-
-linear-gradient(
-90deg,
-var(--primary),
-var(--secondary),
-var(--accent)
-);
-
-
--webkit-background-clip:text;
-
-color:transparent;
+visibility:hidden;
 
 }
 
+.loader-ring{
 
-.loader-line{
+width:90px;
+height:90px;
 
-width:250px;
+border-radius:50%;
 
-height:5px;
+border:5px solid rgba(255,255,255,.08);
 
-background:#222;
+border-top:5px solid var(--primary);
 
-margin-top:25px;
-
-border-radius:50px;
-
-overflow:hidden;
+animation:spin 1s linear infinite;
 
 }
 
+@keyframes spin{
 
-.loader-progress{
+to{
 
-height:100%;
-
-width:0%;
-
-background:
-
-linear-gradient(
-90deg,
-var(--primary),
-var(--accent)
-);
+transform:rotate(360deg);
 
 }
 
+}
 
+.loader h2{
 
-/* =====================================
+font-size:20px;
+
+letter-spacing:4px;
+
+color:var(--primary);
+
+}
+
+/*=================================================
 NAVBAR
-===================================== */
-
+=================================================*/
 
 header{
 
 position:fixed;
 
-top:20px;
-
+top:0;
 left:0;
 
 width:100%;
 
-z-index:1000;
-
-}
-
-
-nav{
+padding:18px 8%;
 
 display:flex;
 
@@ -371,64 +419,96 @@ justify-content:space-between;
 
 align-items:center;
 
-padding:18px 30px;
+backdrop-filter:blur(20px);
+
+background:rgba(0,0,0,.25);
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:9999;
 
 }
 
-
-
 .logo{
 
-font-size:2rem;
+font-size:28px;
 
-font-weight:800;
+font-weight:900;
+
+letter-spacing:2px;
+
+color:var(--primary);
 
 text-decoration:none;
+
+}
+
+nav{
+
+display:flex;
+
+gap:25px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:var(--text);
+
+font-weight:600;
+
+transition:.3s;
+
+position:relative;
+
+}
+
+nav a:hover{
 
 color:var(--primary);
 
 }
 
+nav a::after{
 
+content:"";
 
-.nav-links{
+position:absolute;
 
-display:flex;
+left:0;
+bottom:-6px;
 
-gap:30px;
+width:0;
 
-list-style:none;
+height:2px;
 
-}
-
-
-
-.nav-links a{
-
-text-decoration:none;
-
-color:white;
-
-font-weight:500;
+background:var(--primary);
 
 transition:.3s;
 
 }
 
+nav a:hover::after{
 
-
-.nav-links a:hover{
-
-color:var(--primary);
+width:100%;
 
 }
 
+.menu-btn{
 
+display:none;
 
-/* =====================================
-HERO
-===================================== */
+font-size:28px;
 
+cursor:pointer;
+
+}
+
+/*=================================================
+HERO SECTION
+=================================================*/
 
 .hero{
 
@@ -438,1182 +518,466 @@ display:flex;
 
 align-items:center;
 
-padding-top:100px;
+justify-content:center;
+
+padding:120px 8% 80px;
+
+gap:70px;
+
+flex-wrap:wrap;
 
 }
 
+.hero-left{
 
+flex:1;
 
-.hero-content{
-
-max-width:700px;
+min-width:320px;
 
 }
 
+.hero-right{
 
+flex:1;
 
-.hero-badge{
+display:flex;
 
-display:inline-block;
+justify-content:center;
 
-padding:10px 20px;
+min-width:320px;
 
-border-radius:50px;
+}
+ .hero-tag{
 
-background:rgba(0,229,255,.1);
+display:inline-flex;
 
-border:1px solid var(--primary);
+align-items:center;
 
-color:var(--primary);
+gap:10px;
+
+padding:10px 18px;
+
+border:1px solid rgba(255,255,255,.12);
+
+background:var(--glass);
+
+backdrop-filter:blur(15px);
+
+border-radius:999px;
 
 margin-bottom:25px;
 
+font-size:.95rem;
+
+color:var(--primary);
+
+box-shadow:var(--shadow);
+
 }
-
-
 
 .hero h1{
 
-font-size:5rem;
+font-size:clamp(2.8rem,6vw,5rem);
 
-line-height:1.1;
+font-weight:900;
 
-font-weight:800;
+line-height:1.05;
+
+margin-bottom:18px;
 
 }
 
-
-
 .hero h1 span{
 
-background:
-
-linear-gradient(
+background:linear-gradient(
 90deg,
 var(--primary),
 var(--secondary),
 var(--accent)
 );
 
-
 -webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
 
-color:transparent;
+background-size:300%;
 
-}
-
-
-
-.hero h2{
-
-margin-top:20px;
-
-color:var(--primary);
-
-font-family:'JetBrains Mono';
+animation:gradientMove 6s linear infinite;
 
 }
 
+@keyframes gradientMove{
 
-
-.hero p{
-
-margin-top:25px;
-
-font-size:1.2rem;
-
-color:var(--gray);
-
-line-height:1.8;
+0%{background-position:0%;}
+100%{background-position:300%;}
 
 }
 
+.typewriter{
 
-
-.hero-buttons{
-
-margin-top:40px;
-
-display:flex;
-
-gap:20px;
-
-}
-
-
-.btn{
-
-padding:15px 35px;
-
-border-radius:50px;
-
-text-decoration:none;
+font-size:1.35rem;
 
 font-weight:700;
 
-transition:.4s;
-
-}
-
-
-
-.btn-primary{
-
-background:
-
-linear-gradient(
-90deg,
-var(--primary),
-var(--secondary)
-);
-
-color:white;
-
-}
-
-
-
-.btn-secondary{
-
-border:1px solid var(--primary);
+margin-bottom:20px;
 
 color:var(--primary);
 
-}
-
-
-
-.btn:hover{
-
-transform:translateY(-5px);
-
-box-shadow:
-
-0 0 25px var(--primary);
+min-height:35px;
 
 }
 
+.hero p{
 
-</style>
+font-size:1.05rem;
 
-</head>
+max-width:650px;
 
+color:var(--muted);
 
-<body>
-
-
-<!-- BACKGROUND -->
-
-<div class="grid-background"></div>
-
-
-
-<!-- LOADER -->
-
-<div id="loader">
-
-<div class="loader-name">
-VIVEK.PK
-</div>
-
-
-<div class="loader-line">
-
-<div class="loader-progress"></div>
-
-</div>
-
-</div>
-
-
-
-<!-- HEADER -->
-
-<header>
-
-<nav class="container glass">
-
-
-<a href="#" class="logo">
-
-&lt;VIVEK /&gt;
-
-</a>
-
-
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-
-</ul>
-
-
-</nav>
-
-</header>
-
-
-
-
-<!-- HERO SECTION -->
-
-
-<section class="hero" id="home">
-
-
-<div class="container">
-
-
-<div class="hero-content">
-
-
-<div class="hero-badge">
-
-🚀 Welcome To My Digital Universe
-
-</div>
-
-
-
-<h1>
-
-Hi, I'm
-
-<span>
-Vivek PK
-</span>
-
-
-</h1>
-
-
-
-<h2>
-Software Developer | Cybersecurity Enthusiast
-</h2>
-
-
-
-<p>
-
-BCA student passionate about programming,
-software development, cybersecurity and building
-technology that creates a positive impact on society.
-
-</p>
-
-
-
-<div class="hero-buttons">
-
-
-<a href="#projects"
-class="btn btn-primary">
-
-View Projects
-
-</a>
-
-
-
-<a href="#contact"
-class="btn btn-secondary">
-
-Contact Me
-
-</a>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-<!-- =====================================
-3D HERO EXPERIENCE
-===================================== -->
-
-
-<section class="hero-visual-section">
-
-
-<div class="container">
-
-
-<div class="hero-3d glass">
-
-
-<div class="glow-circle"></div>
-
-
-<div class="code-box">
-
-<pre>
-<span>const</span> developer = {
-
- name:
- "Vivek PK",
-
- role:
- "Software Developer",
-
- passion:
- "Cybersecurity"
-
-};
-</pre>
-
-
-</div>
-
-
-
-<div class="floating-icon icon-python">
-
-<i class="fab fa-python"></i>
-
-</div>
-
-
-<div class="floating-icon icon-code">
-
-<i class="fas fa-code"></i>
-
-</div>
-
-
-<div class="floating-icon icon-shield">
-
-<i class="fas fa-shield-alt"></i>
-
-</div>
-
-
-
-<div class="floating-icon icon-ai">
-
-<i class="fas fa-brain"></i>
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<!-- =====================================
-ABOUT SECTION
-===================================== -->
-
-
-<section id="about">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-About Me
-
-</h2>
-
-
-
-<p class="section-description">
-
-My journey, passion and vision as a developer.
-
-</p>
-
-
-
-<div class="about-grid">
-
-
-
-<div class="glass about-card">
-
-
-<i class="fas fa-user-astronaut"></i>
-
-
-<h3>
-
-Who Am I?
-
-</h3>
-
-
-<p>
-
-I'm Vivek PK, a BCA student passionate about
-software development, Python programming,
-web technologies and cybersecurity.
-
-I enjoy learning new technologies and creating
-solutions that can help people.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="glass about-card">
-
-
-<i class="fas fa-bullseye"></i>
-
-
-<h3>
-
-My Mission
-
-</h3>
-
-
-<p>
-
-My mission is to build secure,
-innovative and useful digital solutions
-while continuously improving my technical skills.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="glass about-card">
-
-
-<i class="fas fa-rocket"></i>
-
-
-<h3>
-
-Future Goals
-
-</h3>
-
-
-<p>
-
-Become a skilled software developer,
-master cybersecurity,
-explore AI and contribute to technology.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- =====================================
-SKILLS SECTION
-===================================== -->
-
-
-<section id="skills">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Technical Skills
-
-</h2>
-
-
-
-<p class="section-description">
-
-Technologies and tools I am learning and building with.
-
-</p>
-
-
-
-<div class="skills-grid">
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fab fa-python"></i>
-
-
-<h3>
-
-Python
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:80%">
-
-</div>
-
-</div>
-
-
-<span>
-
-80%
-
-</span>
-
-
-</div>
-
-
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fas fa-code"></i>
-
-
-<h3>
-
-C Programming
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:75%">
-
-</div>
-
-</div>
-
-
-<span>
-
-75%
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fab fa-html5"></i>
-
-
-<h3>
-
-HTML5
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:90%">
-
-</div>
-
-</div>
-
-
-<span>
-
-90%
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fab fa-css3-alt"></i>
-
-
-<h3>
-
-CSS3
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:85%">
-
-</div>
-
-</div>
-
-
-<span>
-
-85%
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fab fa-js"></i>
-
-
-<h3>
-
-JavaScript
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:65%">
-
-</div>
-
-</div>
-
-
-<span>
-
-65%
-
-</span>
-
-
-</div>
-
-
-
-
-
-
-
-<div class="skill-card glass">
-
-
-<i class="fas fa-user-secret"></i>
-
-
-<h3>
-
-Cybersecurity
-
-</h3>
-
-
-<div class="skill-bar">
-
-<div class="skill-progress"
-style="width:50%">
-
-</div>
-
-</div>
-
-
-<span>
-
-Learning
-
-</span>
-
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<!-- =====================================
-DEVELOPER TERMINAL
-===================================== -->
-
-
-<section id="terminal">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Developer Terminal
-
-</h2>
-
-
-
-<div class="terminal glass">
-
-
-<div class="terminal-header">
-
-
-<span></span>
-
-<span></span>
-
-<span></span>
-
-
-</div>
-
-
-
-
-<div class="terminal-content">
-
-
-<p>
-
-<span class="terminal-green">
-$
-</span>
-
-whoami
-
-</p>
-
-
-
-<p>
-
-Vivek PK - Developer
-
-</p>
-
-
-
-<br>
-
-
-
-<p>
-
-<span class="terminal-green">
-$
-</span>
-
-skills
-
-</p>
-
-
-
-<p>
-
-Python | C | HTML | CSS | JavaScript
-
-</p>
-
-
-
-<br>
-
-
-
-<p>
-
-<span class="terminal-green">
-$
-</span>
-
-mission
-
-</p>
-
-
-
-<p>
-
-Build secure and innovative technology.
-
-</p>
-
-
-
-<br>
-
-
-<p>
-
-<span class="terminal-green">
-$
-</span>
-
-_
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-/* =====================================
-PART 2 CSS
-===================================== */
-
-
-.section-title{
-
-font-size:3rem;
-
-margin-bottom:15px;
-
-background:
-linear-gradient(
-90deg,
-var(--primary),
-var(--secondary)
-);
-
--webkit-background-clip:text;
-
-color:transparent;
+margin-bottom:35px;
 
 }
 
-
-.section-description{
-
-color:var(--gray);
-
-margin-bottom:50px;
-
-}
-
-
-
-.hero-3d{
-
-height:500px;
-
-position:relative;
+.hero-buttons{
 
 display:flex;
 
-align-items:center;
+flex-wrap:wrap;
 
-justify-content:center;
-
-overflow:hidden;
-
-margin-top:50px;
+gap:18px;
 
 }
 
+.btn{
 
+padding:14px 28px;
 
-.glow-circle{
+border:none;
 
-width:200px;
+cursor:pointer;
 
-height:200px;
+border-radius:50px;
 
-border-radius:50%;
+font-weight:700;
 
-background:
+text-decoration:none;
 
-linear-gradient(
+transition:.35s;
+
+position:relative;
+
+overflow:hidden;
+
+display:inline-flex;
+
+align-items:center;
+
+gap:10px;
+
+}
+
+.btn-primary{
+
+background:linear-gradient(
 135deg,
 var(--primary),
 var(--secondary)
 );
 
-
-filter:blur(5px);
-
-animation:pulse 3s infinite;
+color:#000;
 
 }
 
+.btn-secondary{
 
+background:var(--glass);
 
-.code-box{
+color:var(--text);
 
-position:absolute;
+border:1px solid rgba(255,255,255,.1);
 
-background:rgba(0,0,0,.7);
-
-padding:25px;
-
-border-radius:20px;
-
-font-family:'JetBrains Mono';
-
-color:#00ff99;
+backdrop-filter:blur(15px);
 
 }
 
+.btn:hover{
 
+transform:translateY(-6px);
 
-.code-box span{
-
-color:var(--primary);
+box-shadow:
+0 15px 40px rgba(0,229,255,.28);
 
 }
 
+.hero-image{
 
+width:390px;
 
-.floating-icon{
-
-position:absolute;
-
-width:60px;
-
-height:60px;
+height:390px;
 
 border-radius:50%;
 
-display:flex;
+overflow:hidden;
 
-align-items:center;
+position:relative;
 
-justify-content:center;
+border:4px solid rgba(255,255,255,.12);
 
-background:rgba(255,255,255,.1);
+box-shadow:
 
-font-size:25px;
+0 0 35px rgba(0,229,255,.35),
 
-color:var(--primary);
+0 0 90px rgba(123,97,255,.2);
 
-animation:float 4s infinite;
-
-}
-
-
-
-.icon-python{
-
-top:20%;
-
-left:15%;
+animation:floatImage 5s ease-in-out infinite;
 
 }
 
+.hero-image img{
 
-.icon-code{
+width:100%;
 
-top:20%;
+height:100%;
 
-right:15%;
-
-}
-
-
-.icon-shield{
-
-bottom:20%;
-
-left:20%;
+object-fit:cover;
 
 }
 
+.hero-image::before{
 
-.icon-ai{
+content:"";
 
-bottom:20%;
+position:absolute;
 
-right:20%;
+inset:-10px;
+
+border-radius:50%;
+
+background:
+
+conic-gradient(
+
+var(--primary),
+
+var(--secondary),
+
+var(--accent),
+
+var(--primary)
+
+);
+
+z-index:-1;
+
+filter:blur(25px);
+
+animation:spin 8s linear infinite;
 
 }
 
+@keyframes floatImage{
 
+0%,100%{
 
-
-.about-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
+transform:translateY(0);
 
 }
 
+50%{
 
-
-.about-card{
-
-padding:35px;
-
-transition:.4s;
+transform:translateY(-15px);
 
 }
 
+}
 
+/*=================================================
+COMMON SECTION
+=================================================*/
 
-.about-card i{
+section{
 
-font-size:40px;
+padding:100px 8%;
 
-color:var(--primary);
+position:relative;
+
+}
+
+.section-title{
+
+font-size:2.8rem;
+
+font-weight:900;
+
+text-align:center;
 
 margin-bottom:20px;
 
 }
 
-
-
-.about-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-
-
-.skills-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-}
-
-
-
-.skill-card{
-
-padding:30px;
-
-}
-
-
-
-.skill-card i{
-
-font-size:45px;
+.section-title span{
 
 color:var(--primary);
 
 }
 
+.section-sub{
 
+text-align:center;
 
-.skill-bar{
+color:var(--muted);
+
+max-width:700px;
+
+margin:auto auto 70px;
+
+}
+
+.glass{
+
+background:var(--glass);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:var(--radius);
+
+box-shadow:var(--shadow);
+
+}
+
+/*=================================================
+ABOUT
+=================================================*/
+
+.about-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:40px;
+
+align-items:center;
+
+}
+
+.about-card{
+
+padding:35px;
+
+}
+
+.about-card h3{
+
+margin-bottom:18px;
+
+font-size:1.7rem;
+
+}
+
+.about-card p{
+
+color:var(--muted);
+
+margin-bottom:18px;
+
+}
+
+.info-list{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:18px;
+
+margin-top:25px;
+
+}
+
+.info-item{
+
+padding:18px;
+
+border-radius:15px;
+
+background:rgba(255,255,255,.03);
+
+}
+
+.info-item strong{
+
+display:block;
+
+color:var(--primary);
+
+margin-bottom:8px;
+
+}
+
+/*=================================================
+SKILLS
+=================================================*/
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:25px;
+
+}
+
+.skill-card{
+
+padding:25px;
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.skill-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.skill-head{
+
+display:flex;
+
+justify-content:space-between;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.progress-bar{
 
 height:10px;
 
-background:#222;
+border-radius:50px;
 
-border-radius:20px;
-
-margin:20px 0;
+background:rgba(255,255,255,.08);
 
 overflow:hidden;
 
 }
 
-
-
-.skill-progress{
+.progress-fill{
 
 height:100%;
+
+width:0;
+
+border-radius:50px;
 
 background:
 
@@ -1623,762 +987,155 @@ var(--primary),
 var(--accent)
 );
 
-}
-
-
-
-.terminal{
-
-padding:30px;
-
-background:#020202;
-
-font-family:'JetBrains Mono';
+transition:2s;
 
 }
 
+/*=================================================
+EXPERIENCE + EDUCATION
+=================================================*/
 
+.timeline{
 
-.terminal-header span{
+position:relative;
 
-display:inline-block;
+max-width:900px;
 
-width:14px;
-
-height:14px;
-
-border-radius:50%;
-
-background:var(--primary);
-
-margin-right:8px;
+margin:auto;
 
 }
 
+.timeline::before{
 
+content:"";
 
-.terminal-content{
+position:absolute;
 
-margin-top:25px;
+left:50%;
 
-color:#ddd;
+top:0;
 
-}
+width:4px;
 
+height:100%;
 
+background:
 
-.terminal-green{
+linear-gradient(
 
-color:var(--accent);
+var(--primary),
 
-}
+var(--secondary)
 
+);
 
-
-@keyframes float{
-
-50%{
-
-transform:translateY(-20px);
-
-}
+transform:translateX(-50%);
 
 }
 
+.timeline-item{
 
-@keyframes pulse{
+width:50%;
 
-50%{
+padding:20px 35px;
 
-transform:scale(1.2);
+position:relative;
 
-opacity:.7;
+}
+
+.timeline-item:nth-child(odd){
+
+left:0;
+
+text-align:right;
 
 }
 
+.timeline-item:nth-child(even){
+
+left:50%;
+
 }
-  <!-- =====================================
-PROJECTS SECTION
-===================================== -->
 
-<section id="projects">
+.timeline-content{
 
-<div class="container">
+padding:28px;
 
+}
 
-<h2 class="section-title">
+.timeline-content h3{
 
-Featured Projects
+margin-bottom:12px;
 
-</h2>
+}
 
+.timeline-content p{
 
-<p class="section-description">
+color:var(--muted);
 
-Some projects that represent my learning and development journey.
+}
 
-</p>
+/*=================================================
+PROJECTS
+=================================================*/
 
+.project-filter{
 
+display:flex;
 
-<div class="projects-grid">
+justify-content:center;
 
+flex-wrap:wrap;
 
+gap:15px;
 
-<div class="project-card glass">
+margin-bottom:45px;
 
+}
 
-<div class="project-image">
+.filter-btn{
 
-<img src="https://via.placeholder.com/600x350"
-alt="Portfolio Website">
+padding:12px 24px;
 
-</div>
+border:none;
 
+border-radius:40px;
 
-<div class="project-content">
+background:var(--glass);
 
+color:var(--text);
 
-<h3>
+cursor:pointer;
 
-Futuristic Developer Portfolio
+font-weight:700;
 
-</h3>
+transition:.3s;
 
+}
 
-<p>
+.filter-btn.active,
 
-A modern animated portfolio website with
-glassmorphism, AI assistant and futuristic UI.
+.filter-btn:hover{
 
-</p>
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
 
+color:#000;
 
-
-<div class="project-tags">
-
-<span>HTML</span>
-
-<span>CSS</span>
-
-<span>JavaScript</span>
-
-</div>
-
-
-
-<div class="project-links">
-
-<a href="#">
-
-<i class="fab fa-github"></i>
-
-GitHub
-
-</a>
-
-
-<a href="#">
-
-Live Demo
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="project-card glass">
-
-
-<div class="project-image">
-
-<img src="https://via.placeholder.com/600x350"
-alt="Python Project">
-
-</div>
-
-
-<div class="project-content">
-
-
-<h3>
-
-Python Automation Projects
-
-</h3>
-
-
-<p>
-
-Small Python applications focusing on logic,
-automation and problem solving.
-
-</p>
-
-
-
-<div class="project-tags">
-
-<span>Python</span>
-
-<span>Automation</span>
-
-<span>Logic</span>
-
-</div>
-
-
-
-<div class="project-links">
-
-<a href="#">
-
-<i class="fab fa-github"></i>
-
-GitHub
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="project-card glass">
-
-
-<div class="project-image">
-
-<img src="https://via.placeholder.com/600x350"
-alt="Cybersecurity Project">
-
-</div>
-
-
-<div class="project-content">
-
-
-<h3>
-
-Cybersecurity Learning Lab
-
-</h3>
-
-
-<p>
-
-A collection of cybersecurity experiments,
-notes and security research.
-
-</p>
-
-
-
-<div class="project-tags">
-
-<span>Security</span>
-
-<span>Linux</span>
-
-<span>Networking</span>
-
-</div>
-
-
-
-<div class="project-links">
-
-<a href="#">
-
-<i class="fab fa-github"></i>
-
-GitHub
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-<!-- =====================================
-EDUCATION TIMELINE
-===================================== -->
-
-
-<section id="education">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Education Journey
-
-</h2>
-
-
-
-<div class="timeline">
-
-
-
-<div class="timeline-item glass">
-
-
-<h3>
-
-Bachelor of Computer Applications (BCA)
-
-</h3>
-
-
-<span>
-
-Current Education
-
-</span>
-
-
-<p>
-
-Learning programming,
-software development,
-data structures,
-web technologies and computer science fundamentals.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="timeline-item glass">
-
-
-<h3>
-
-Programming Journey
-
-</h3>
-
-
-<span>
-
-Continuous Learning
-
-</span>
-
-
-<p>
-
-Practicing Python,
-C programming,
-web development and building projects.
-
-</p>
-
-
-</div>
-
-
-
-
-
-<div class="timeline-item glass">
-
-
-<h3>
-
-Future Learning
-
-</h3>
-
-
-<span>
-
-Upcoming Goals
-
-</span>
-
-
-<p>
-
-Cybersecurity,
-Machine Learning,
-Artificial Intelligence and Cloud technologies.
-
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- =====================================
-ACHIEVEMENTS
-===================================== -->
-
-
-<section id="achievements">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Achievements
-
-</h2>
-
-
-
-<div class="achievement-grid">
-
-
-<div class="achievement-card glass">
-
-<i class="fas fa-code"></i>
-
-<h3>
-
-Developer Journey
-
-</h3>
-
-<p>
-
-Building programming skills through consistent practice.
-
-</p>
-
-</div>
-
-
-
-
-<div class="achievement-card glass">
-
-<i class="fas fa-graduation-cap"></i>
-
-<h3>
-
-BCA Student
-
-</h3>
-
-<p>
-
-Learning computer applications and software development.
-
-</p>
-
-</div>
-
-
-
-
-
-<div class="achievement-card glass">
-
-<i class="fas fa-shield-alt"></i>
-
-<h3>
-
-Cybersecurity Explorer
-
-</h3>
-
-<p>
-
-Exploring secure coding and ethical hacking concepts.
-
-</p>
-
-</div>
-
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- =====================================
-GITHUB SECTION
-===================================== -->
-
-
-<section id="github">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-GitHub Universe
-
-</h2>
-
-
-
-<div class="github-box glass">
-
-
-<i class="fab fa-github"></i>
-
-
-<h3>
-
-Open Source & Projects
-
-</h3>
-
-
-<p>
-
-Explore my repositories,
-coding experiments and future projects.
-
-</p>
-
-
-
-<a href="#"
-class="btn btn-primary">
-
-Visit GitHub
-
-</a>
-
-
-
-<div class="github-stats">
-
-
-<div>
-
-<h2>
-
-10+
-
-</h2>
-
-<p>
-
-Projects
-
-</p>
-
-</div>
-
-
-
-<div>
-
-<h2>
-
-100+
-
-</h2>
-
-<p>
-
-Commits
-
-</p>
-
-</div>
-
-
-
-<div>
-
-<h2>
-
-∞
-
-</h2>
-
-<p>
-
-Learning
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<!-- =====================================
-AI ASSISTANT
-===================================== -->
-
-
-<section id="ai-assistant">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-AI Portfolio Assistant
-
-</h2>
-
-
-
-<div class="chatbot glass">
-
-
-<div class="chat-header">
-
-🤖 Vivek AI Assistant
-
-</div>
-
-
-
-<div class="chat-messages"
-id="chatMessages">
-
-
-<div class="bot-message">
-
-Hello 👋
-
-I can answer questions about Vivek,
-skills, projects and contact details.
-
-</div>
-
-
-</div>
-
-
-
-<div class="chat-input">
-
-
-<input 
-type="text"
-id="userMessage"
-placeholder="Ask something...">
-
-
-<button id="sendMessage">
-
-Send
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-/* =====================================
-PART 3 CSS
-===================================== */
-
+}
 
 .projects-grid{
 
 display:grid;
 
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
 
 gap:30px;
 
 }
-
-
 
 .project-card{
 
@@ -2386,21 +1143,387 @@ overflow:hidden;
 
 transition:.4s;
 
+transform-style:preserve-3d;
+
 }
-
-
 
 .project-card:hover{
 
-transform:translateY(-12px);
-
-box-shadow:0 0 30px rgba(0,229,255,.25);
+transform:translateY(-12px) rotateX(3deg);
 
 }
 
+.project-image{
 
+height:220px;
+
+overflow:hidden;
+
+}
 
 .project-image img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.project-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.project-body{
+
+padding:25px;
+
+}
+
+.project-tech{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin:20px 0;
+
+}
+
+.tech{
+
+padding:8px 14px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.06);
+
+font-size:.85rem;
+
+}
+
+.project-actions{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+ 
+/*=================================================
+GITHUB SECTION
+=================================================*/
+
+.github-grid{
+
+display:grid;
+
+grid-template-columns:340px 1fr;
+
+gap:35px;
+
+align-items:start;
+
+}
+
+.github-profile{
+
+padding:30px;
+
+text-align:center;
+
+}
+
+.github-profile img{
+
+width:140px;
+height:140px;
+
+border-radius:50%;
+
+border:4px solid var(--primary);
+
+margin-bottom:20px;
+
+}
+
+.github-profile h3{
+
+font-size:1.6rem;
+
+margin-bottom:10px;
+
+}
+
+.github-profile p{
+
+color:var(--muted);
+
+margin-bottom:25px;
+
+}
+
+.github-stats{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+}
+
+.github-stat{
+
+padding:18px;
+
+border-radius:16px;
+
+background:rgba(255,255,255,.04);
+
+}
+
+.github-stat h4{
+
+font-size:1.6rem;
+
+color:var(--primary);
+
+}
+
+.repo-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:22px;
+
+}
+
+.repo-card{
+
+padding:22px;
+
+transition:.35s;
+
+}
+
+.repo-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.language-tag{
+
+display:inline-block;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,.06);
+
+margin-top:12px;
+
+font-size:.85rem;
+
+}
+
+/*=================================================
+CERTIFICATIONS
+=================================================*/
+
+.cert-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.cert-card{
+
+padding:30px;
+
+text-align:center;
+
+transition:.35s;
+
+}
+
+.cert-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.cert-card i{
+
+font-size:55px;
+
+color:var(--primary);
+
+margin-bottom:20px;
+
+}
+
+/*=================================================
+ACHIEVEMENTS
+=================================================*/
+
+.achievement-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.achievement{
+
+padding:28px;
+
+text-align:center;
+
+}
+
+.counter{
+
+font-size:2.5rem;
+
+font-weight:900;
+
+color:var(--primary);
+
+margin-bottom:10px;
+
+}
+
+/*=================================================
+SERVICES
+=================================================*/
+
+.service-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+.service-card{
+
+padding:30px;
+
+transition:.35s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-card i{
+
+font-size:45px;
+
+margin-bottom:18px;
+
+color:var(--accent);
+
+}
+
+/*=================================================
+TESTIMONIALS
+=================================================*/
+
+.testimonial-wrapper{
+
+display:flex;
+
+overflow:hidden;
+
+gap:25px;
+
+scroll-behavior:smooth;
+
+}
+
+.testimonial{
+
+min-width:360px;
+
+padding:28px;
+
+}
+
+.testimonial img{
+
+width:70px;
+height:70px;
+
+border-radius:50%;
+
+margin-bottom:18px;
+
+}
+
+.testimonial p{
+
+color:var(--muted);
+
+margin-bottom:18px;
+
+}
+
+/*=================================================
+BLOG
+=================================================*/
+
+.blog-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:28px;
+
+}
+
+.blog-card{
+
+overflow:hidden;
+
+transition:.35s;
+
+}
+
+.blog-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.blog-card img{
 
 width:100%;
 
@@ -2410,789 +1533,15 @@ object-fit:cover;
 
 }
 
+.blog-content{
 
-
-.project-content{
-
-padding:25px;
+padding:24px;
 
 }
 
-
-
-.project-tags{
-
-display:flex;
-
-gap:10px;
-
-flex-wrap:wrap;
-
-margin:20px 0;
-
-}
-
-
-
-.project-tags span{
-
-padding:6px 15px;
-
-border-radius:30px;
-
-background:rgba(0,229,255,.12);
-
-color:var(--primary);
-
-}
-
-
-
-.project-links{
-
-display:flex;
-
-gap:15px;
-
-}
-
-
-
-.project-links a{
-
-text-decoration:none;
-
-color:white;
-
-}
-
-
-
-.timeline{
-
-display:grid;
-
-gap:25px;
-
-}
-
-
-
-.timeline-item{
-
-padding:30px;
-
-border-left:3px solid var(--primary);
-
-}
-
-
-
-.timeline-item span{
-
-color:var(--accent);
-
-}
-
-
-
-.achievement-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-gap:25px;
-
-}
-
-
-
-.achievement-card{
-
-padding:35px;
-
-text-align:center;
-
-}
-
-
-
-.achievement-card i{
-
-font-size:45px;
-
-color:var(--primary);
-
-}
-
-
-
-.github-box{
-
-padding:50px;
-
-text-align:center;
-
-}
-
-
-
-.github-box i{
-
-font-size:70px;
-
-color:var(--primary);
-
-}
-
-
-
-.github-stats{
-
-display:flex;
-
-justify-content:center;
-
-gap:50px;
-
-margin-top:40px;
-
-}
-
-
-
-.chatbot{
-
-max-width:700px;
-
-margin:auto;
-
-overflow:hidden;
-
-}
-
-
-
-.chat-header{
-
-padding:20px;
-
-background:rgba(0,229,255,.15);
-
-font-weight:700;
-
-}
-
-
-
-.chat-messages{
-
-height:300px;
-
-padding:25px;
-
-overflow:auto;
-
-}
-
-
-
-.bot-message{
-
-background:#111;
-
-padding:15px;
-
-border-radius:15px;
-
-}
-
-
-
-.chat-input{
-
-display:flex;
-
-padding:20px;
-
-gap:10px;
-
-}
-
-
-
-.chat-input input{
-
-flex:1;
-
-padding:15px;
-
-border-radius:30px;
-
-border:none;
-
-outline:none;
-
-background:#111;
-
-color:white;
-
-}
-
-
-.chat-input button{
-
-padding:15px 25px;
-
-border-radius:30px;
-
-border:none;
-
-background:var(--primary);
-
-}
-<!-- =====================================
-BLOG SECTION
-===================================== -->
-
-<section id="blog">
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Developer Blog
-
-</h2>
-
-
-<p class="section-description">
-
-Sharing knowledge, experiments and technology journey.
-
-</p>
-
-
-
-<div class="blog-grid">
-
-
-
-<div class="blog-card glass">
-
-
-<div class="blog-content">
-
-
-<h3>
-
-Learning Python: My Journey
-
-</h3>
-
-
-<p>
-
-How I started programming and improved my problem-solving skills.
-
-</p>
-
-
-<div class="blog-tags">
-
-<span>
-
-Python
-
-</span>
-
-
-<span>
-
-Programming
-
-</span>
-
-</div>
-
-
-<a href="#">
-
-Read Article →
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="blog-card glass">
-
-
-<div class="blog-content">
-
-
-<h3>
-
-Exploring Cybersecurity
-
-</h3>
-
-
-<p>
-
-My learning path towards ethical hacking and secure development.
-
-</p>
-
-
-<div class="blog-tags">
-
-<span>
-
-Security
-
-</span>
-
-
-<span>
-
-Cyber
-
-</span>
-
-</div>
-
-
-<a href="#">
-
-Read Article →
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="blog-card glass">
-
-
-<div class="blog-content">
-
-
-<h3>
-
-Building Modern Websites
-
-</h3>
-
-
-<p>
-
-Creating responsive and interactive web experiences.
-
-</p>
-
-
-<div class="blog-tags">
-
-<span>
-
-HTML
-
-</span>
-
-
-<span>
-
-CSS
-
-</span>
-
-
-<span>
-
-JavaScript
-
-</span>
-
-</div>
-
-
-<a href="#">
-
-Read Article →
-
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-<!-- =====================================
-CONTACT SECTION
-===================================== -->
-
-
-<section id="contact">
-
-
-<div class="container">
-
-
-<h2 class="section-title">
-
-Contact Me
-
-</h2>
-
-
-
-<p class="section-description">
-
-Let's connect and build something amazing.
-
-</p>
-
-
-
-<div class="contact-grid">
-
-
-
-<div class="contact-info glass">
-
-
-<h3>
-
-Connect
-
-</h3>
-
-
-
-<div class="contact-item">
-
-<i class="fas fa-envelope"></i>
-
-<p>
-
-Email:
-<br>
-
-vivekpk203@gmail.com
-
-</p>
-
-</div>
-
-
-
-
-<div class="contact-item">
-
-<i class="fas fa-phone"></i>
-
-<p>
-
-Phone:
-<br>
-
-8848980893
-
-</p>
-
-</div>
-
-
-
-
-<div class="contact-item">
-
-<i class="fab fa-instagram"></i>
-
-<p>
-
-Instagram:
-<br>
-
-vi__vek303
-
-</p>
-
-</div>
-
-
-
-<div class="contact-item">
-
-<i class="fab fa-linkedin"></i>
-
-<p>
-
-LinkedIn:
-<br>
-
-Your LinkedIn Profile
-
-</p>
-
-</div>
-
-
-
-</div>
-
-
-
-
-
-
-<div class="contact-form glass">
-
-
-<form id="contactForm">
-
-
-<input 
-type="text"
-placeholder="Your Name"
-required>
-
-
-
-<input 
-type="email"
-placeholder="Your Email"
-required>
-
-
-
-<input 
-type="text"
-placeholder="Subject"
-required>
-
-
-
-<textarea
-rows="6"
-placeholder="Your Message"
-required></textarea>
-
-
-
-<button class="btn btn-primary">
-
-<i class="fas fa-paper-plane"></i>
-
-Send Message
-
-</button>
-
-
-
-</form>
-
-
-</div>
-
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<!-- =====================================
-FOOTER
-===================================== -->
-
-
-<footer>
-
-
-<div class="container">
-
-
-<div class="footer-box glass">
-
-
-<h2>
-
-&lt;VIVEK /&gt;
-
-</h2>
-
-
-
-<p>
-
-Building the future with code,
-creativity and curiosity.
-
-</p>
-
-
-
-<div class="social-links">
-
-
-<a href="#">
-
-<i class="fab fa-github"></i>
-
-</a>
-
-
-<a href="#">
-
-<i class="fab fa-linkedin"></i>
-
-</a>
-
-
-<a href="#">
-
-<i class="fab fa-instagram"></i>
-
-</a>
-
-
-</div>
-
-
-
-<p>
-
-© 2026 Vivek PK | All Rights Reserved
-
-</p>
-
-
-</div>
-
-
-</div>
-
-
-</footer>
-/* =====================================
-PART 4 CSS
-===================================== */
-
-
-.blog-grid{
-
-display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-gap:30px;
-
-}
-
-
-
-.blog-card{
-
-padding:30px;
-
-transition:.4s;
-
-}
-
-
-
-.blog-card:hover{
-
-transform:translateY(-10px);
-
-}
-
-
-
-.blog-tags{
-
-display:flex;
-
-gap:10px;
-
-margin:20px 0;
-
-}
-
-
-
-.blog-tags span{
-
-padding:6px 14px;
-
-border-radius:20px;
-
-background:rgba(123,97,255,.2);
-
-color:var(--primary);
-
-}
-
-
-
-.blog-card a{
-
-color:var(--primary);
-
-text-decoration:none;
-
-font-weight:700;
-
-}
-
-
+/*=================================================
+CONTACT
+=================================================*/
 
 .contact-grid{
 
@@ -3200,89 +1549,98 @@ display:grid;
 
 grid-template-columns:1fr 1fr;
 
-gap:30px;
+gap:40px;
 
 }
 
-
-
-.contact-info,
 .contact-form{
 
 padding:35px;
 
 }
 
-
-
-.contact-item{
-
-display:flex;
-
-gap:20px;
-
-align-items:center;
-
-margin:25px 0;
-
-}
-
-
-
-.contact-item i{
-
-font-size:25px;
-
-color:var(--primary);
-
-}
-
-
-
 .contact-form input,
+
 .contact-form textarea{
 
 width:100%;
 
-padding:15px;
+padding:16px;
 
-margin-bottom:20px;
+margin-bottom:18px;
 
 border:none;
 
 outline:none;
 
-border-radius:15px;
+border-radius:14px;
 
-background:#111;
+background:rgba(255,255,255,.05);
 
-color:white;
-
-font-family:inherit;
+color:var(--text);
 
 }
 
+.contact-form textarea{
 
+height:170px;
 
-.footer-box{
-
-padding:40px;
-
-text-align:center;
+resize:none;
 
 }
 
+.contact-info{
 
+padding:35px;
 
-.footer-box h2{
+}
+
+.contact-item{
+
+display:flex;
+
+gap:16px;
+
+margin-bottom:24px;
+
+align-items:center;
+
+}
+
+.contact-item i{
+
+width:55px;
+height:55px;
+
+display:grid;
+
+place-items:center;
+
+border-radius:50%;
+
+background:rgba(255,255,255,.05);
 
 color:var(--primary);
 
-font-size:2.5rem;
+font-size:22px;
 
 }
 
+/*=================================================
+FOOTER
+=================================================*/
 
+footer{
+
+padding:45px 8%;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+background:rgba(255,255,255,.02);
+
+}
 
 .social-links{
 
@@ -3290,97 +1648,171 @@ display:flex;
 
 justify-content:center;
 
-gap:25px;
+gap:18px;
 
 margin:25px 0;
 
 }
 
-
-
 .social-links a{
 
-font-size:30px;
+width:52px;
+height:52px;
 
-color:white;
+display:grid;
 
-transition:.3s;
+place-items:center;
+
+border-radius:50%;
+
+text-decoration:none;
+
+color:var(--text);
+
+background:rgba(255,255,255,.06);
+
+transition:.35s;
 
 }
-
-
 
 .social-links a:hover{
 
-color:var(--primary);
+background:linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+
+color:#000;
+
+transform:translateY(-6px);
 
 }
 
+/*=================================================
+LIGHTBOX
+=================================================*/
 
+.lightbox{
 
-/* =====================================
-RESPONSIVE DESIGN
-===================================== */
+position:fixed;
 
+inset:0;
 
-@media(max-width:900px){
-
-
-.nav-links{
+background:rgba(0,0,0,.88);
 
 display:none;
 
-}
+align-items:center;
 
+justify-content:center;
 
-
-.hero h1{
-
-font-size:3.5rem;
+z-index:999999;
 
 }
 
+.lightbox img{
 
+max-width:90%;
 
-.hero-buttons{
+max-height:90%;
 
-flex-direction:column;
+border-radius:18px;
 
 }
 
+/*=================================================
+MODAL
+=================================================*/
 
+.modal{
 
-.contact-grid{
+position:fixed;
+
+inset:0;
+
+display:none;
+
+align-items:center;
+
+justify-content:center;
+
+background:rgba(0,0,0,.82);
+
+z-index:999998;
+
+}
+
+.modal-content{
+
+width:min(700px,92%);
+
+padding:35px;
+
+}
+
+/*=================================================
+RESPONSIVE
+=================================================*/
+
+@media(max-width:1000px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.about-grid,
+.contact-grid,
+.github-grid{
 
 grid-template-columns:1fr;
 
 }
 
+.timeline::before{
 
-
-.github-stats{
-
-flex-direction:column;
-
-gap:20px;
+left:25px;
 
 }
 
+.timeline-item{
+
+width:100%;
+
+left:0!important;
+
+padding-left:70px;
+
+text-align:left!important;
 
 }
 
+}
 
+@media(max-width:768px){
 
-@media(max-width:600px){
+nav{
 
-
-.hero h1{
-
-font-size:2.8rem;
+display:none;
 
 }
 
+.menu-btn{
 
+display:block;
+
+}
+
+.hero-image{
+
+width:300px;
+height:300px;
+
+}
 
 .section-title{
 
@@ -3388,599 +1820,2642 @@ font-size:2.2rem;
 
 }
 
+.info-list{
 
-
-.hero{
-
-padding-top:150px;
+grid-template-columns:1fr;
 
 }
 
-
-}
-  <script>
-
-/* =====================================
-LOADER ANIMATION
-===================================== */
-
-window.addEventListener("load",()=>{
-
-const loader=document.getElementById("loader");
-const progress=document.querySelector(".loader-progress");
-
-let width=0;
-
-const loading=setInterval(()=>{
-
-width+=5;
-
-progress.style.width=width+"%";
-
-
-if(width>=100){
-
-clearInterval(loading);
-
-loader.style.opacity="0";
-
-setTimeout(()=>{
-
-loader.style.display="none";
-
-},600);
-
 }
 
+</style>
 
-},50);
+</head>
 
+<body>
+
+<div class="progress"></div>
+
+<div class="grid"></div>
+
+<div class="cursor"></div>
+
+<div class="loader" id="loader">
+
+<div class="loader-ring"></div>
+
+<h2>LOADING PORTFOLIO...</h2>
+
+</div>
+
+<header>
+
+<a href="#" class="logo">VP.</a>
+
+<nav id="navbar" aria-label="Primary Navigation">
+
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#projects">Projects</a>
+<a href="#github">GitHub</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="menu-btn" id="menuBtn" aria-label="Open Menu">
+<i class="fas fa-bars"></i>
+</div>
+
+</header>
+
+<!-- ==========================================
+HERO
+EDITABLE SECTION
+Change your name, role, image and links here.
+========================================== -->
+
+<section class="hero" id="home">
+
+<div class="hero-left">
+
+<div class="hero-tag glass">
+
+<i class="fa-solid fa-code"></i>
+
+Available for Freelance & Full-Time
+
+</div>
+
+<h1>
+
+Hi, I'm
+
+<span id="editable-name">
+
+Vivek PK
+
+</span>
+
+</h1>
+
+<div class="typewriter">
+
+<span id="typing"></span>
+
+</div>
+
+<p>
+
+I build modern websites, Python applications,
+AI-powered solutions and cybersecurity projects.
+
+I enjoy creating premium digital experiences
+with beautiful interfaces, scalable architecture,
+and clean code.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#projects" class="btn btn-primary">
+
+<i class="fas fa-rocket"></i>
+
+View Projects
+
+</a>
+
+<a href="#contact" class="btn btn-secondary">
+
+<i class="fas fa-paper-plane"></i>
+
+Hire Me
+
+</a>
+
+<a href="resume.pdf"
+download
+class="btn btn-secondary">
+
+<i class="fas fa-download"></i>
+
+Resume
+
+</a>
+
+<a href="https://github.com/YOUR_USERNAME"
+
+target="_blank"
+
+class="btn btn-secondary">
+
+<i class="fab fa-github"></i>
+
+GitHub
+
+</a>
+
+<a href="https://linkedin.com/in/YOUR_USERNAME"
+
+target="_blank"
+
+class="btn btn-secondary">
+
+<i class="fab fa-linkedin"></i>
+
+LinkedIn
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="hero-image">
+
+<img
+
+src="profile.jpg"
+
+alt="Profile Photo"
+
+loading="lazy">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+ABOUT
+========================================== -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+About <span>Me</span>
+
+</h2>
+
+<p class="section-sub">
+
+Passionate developer focused on building
+beautiful software and solving real-world
+problems.
+
+</p>
+
+<div class="about-grid">
+
+<div class="about-card glass">
+
+<h3>
+
+Who Am I?
+
+</h3>
+
+<p>
+
+I am a Computer Applications student with
+strong interest in Python Development,
+Cybersecurity, Artificial Intelligence,
+Data Science and Full Stack Web Development.
+
+My mission is to build software that impacts
+millions while continuously learning modern
+technologies.
+
+</p>
+
+<p>
+
+I love contributing to GitHub,
+learning open-source technologies,
+and participating in coding competitions.
+
+</p>
+
+</div>
+
+<div class="about-card glass">
+
+<div class="info-list">
+
+<div class="info-item">
+
+<strong>Name</strong>
+
+Vivek PK
+
+</div>
+
+<div class="info-item">
+
+<strong>Email</strong>
+
+your@email.com
+
+</div>
+
+<div class="info-item">
+
+<strong>Phone</strong>
+
++91 XXXXXXXXXX
+
+</div>
+
+<div class="info-item">
+
+<strong>Location</strong>
+
+Kerala, India
+
+</div>
+
+<div class="info-item">
+
+<strong>Degree</strong>
+
+Bachelor of Computer Applications
+
+</div>
+
+<div class="info-item">
+
+<strong>Availability</strong>
+
+Open for Opportunities
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SKILLS
+========================================== -->
+
+<section id="skills">
+
+<h2 class="section-title">
+
+Technical <span>Skills</span>
+
+</h2>
+
+<p class="section-sub">
+
+Technologies I use to build secure,
+scalable and high-performance applications.
+
+</p>
+
+<div class="skills-grid">
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Python</span>
+
+<span>95%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="95%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>C Programming</span>
+
+<span>88%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="88%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>HTML</span>
+
+<span>96%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="96%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>CSS</span>
+
+<span>92%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="92%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>JavaScript</span>
+
+<span>90%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="90%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>SQL</span>
+
+<span>85%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="85%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Git & GitHub</span>
+
+<span>90%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="90%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Linux</span>
+
+<span>82%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="82%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Data Structures</span>
+
+<span>87%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="87%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Cybersecurity</span>
+
+<span>84%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="84%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Data Science</span>
+
+<span>80%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="80%"></div>
+
+</div>
+
+</div>
+
+<div class="skill-card glass">
+
+<div class="skill-head">
+
+<span>Artificial Intelligence</span>
+
+<span>78%</span>
+
+</div>
+
+<div class="progress-bar">
+
+<div class="progress-fill" data-width="78%"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+EXPERIENCE & EDUCATION TIMELINE
+========================================== -->
+
+<section id="experience">
+
+<h2 class="section-title">
+
+Career <span>Journey</span>
+
+</h2>
+
+<p class="section-sub">
+
+My academic journey, achievements, certifications,
+and continuous learning path.
+
+</p>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<div class="timeline-content glass">
+
+<h3>BCA Student</h3>
+
+<h4>2025 - Present</h4>
+
+<p>
+
+Currently pursuing Bachelor of Computer Applications
+while specializing in Python, Cybersecurity,
+AI, Data Science and Modern Web Development.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-content glass">
+
+<h3>Python Development</h3>
+
+<h4>Learning Journey</h4>
+
+<p>
+
+Completed multiple Python projects covering
+automation, data structures, object-oriented
+programming and problem solving.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-content glass">
+
+<h3>Cybersecurity</h3>
+
+<h4>Self Learning</h4>
+
+<p>
+
+Learning Linux, Networking,
+Ethical Hacking fundamentals,
+Web Security,
+OWASP Top 10,
+and Security Tools.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="timeline-item">
+
+<div class="timeline-content glass">
+
+<h3>Artificial Intelligence</h3>
+
+<h4>Current Focus</h4>
+
+<p>
+
+Exploring Machine Learning,
+Generative AI,
+Prompt Engineering,
+Data Science,
+and intelligent automation.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PROJECTS
+========================================== -->
+
+<section id="projects">
+
+<h2 class="section-title">
+
+Featured <span>Projects</span>
+
+</h2>
+
+<p class="section-sub">
+
+A collection of projects demonstrating
+problem solving,
+design,
+performance,
+and modern development.
+
+</p>
+
+<div class="project-filter">
+
+<button class="filter-btn active"
+data-filter="all">
+
+All
+
+</button>
+
+<button class="filter-btn"
+data-filter="python">
+
+Python
+
+</button>
+
+<button class="filter-btn"
+data-filter="web">
+
+Web
+
+</button>
+
+<button class="filter-btn"
+data-filter="ai">
+
+AI
+
+</button>
+
+<button class="filter-btn"
+data-filter="cyber">
+
+Cybersecurity
+
+</button>
+
+<button class="filter-btn"
+data-filter="data">
+
+Data Science
+
+</button>
+
+</div>
+
+<div class="projects-grid">
+
+<!-- Project 1 -->
+
+<div class="project-card glass"
+
+data-category="python">
+
+<div class="project-image">
+
+<img
+src="https://picsum.photos/600/400?random=11"
+alt="Python Project"
+loading="lazy">
+
+</div>
+
+<div class="project-body">
+
+<h3>Library Management System</h3>
+
+<p>
+
+Desktop application built using Python
+for managing books,
+students and transactions.
+
+</p>
+
+<div class="project-tech">
+
+<span class="tech">Python</span>
+
+<span class="tech">SQLite</span>
+
+<span class="tech">Tkinter</span>
+
+</div>
+
+<div class="project-actions">
+
+<a href="#"
+class="btn btn-primary project-open">
+
+Details
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+GitHub
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 2 -->
+
+<div class="project-card glass"
+
+data-category="web">
+
+<div class="project-image">
+
+<img
+src="https://picsum.photos/600/400?random=12"
+alt="Portfolio"
+loading="lazy">
+
+</div>
+
+<div class="project-body">
+
+<h3>Premium Portfolio</h3>
+
+<p>
+
+Modern responsive portfolio featuring
+animations,
+glassmorphism
+and GitHub integration.
+
+</p>
+
+<div class="project-tech">
+
+<span class="tech">HTML</span>
+
+<span class="tech">CSS</span>
+
+<span class="tech">JavaScript</span>
+
+</div>
+
+<div class="project-actions">
+
+<a href="#"
+class="btn btn-primary project-open">
+
+Details
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+GitHub
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 3 -->
+
+<div class="project-card glass"
+
+data-category="ai">
+
+<div class="project-image">
+
+<img
+src="https://picsum.photos/600/400?random=13"
+alt="AI Project"
+loading="lazy">
+
+</div>
+
+<div class="project-body">
+
+<h3>AI Assistant</h3>
+
+<p>
+
+An intelligent chatbot using
+Python APIs and modern AI tools.
+
+</p>
+
+<div class="project-tech">
+
+<span class="tech">Python</span>
+
+<span class="tech">AI</span>
+
+<span class="tech">API</span>
+
+</div>
+
+<div class="project-actions">
+
+<a href="#"
+class="btn btn-primary project-open">
+
+Details
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+GitHub
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Project 4 -->
+
+<div class="project-card glass"
+
+data-category="cyber">
+
+<div class="project-image">
+
+<img
+src="https://picsum.photos/600/400?random=14"
+alt="Cybersecurity Project"
+loading="lazy">
+
+</div>
+
+<div class="project-body">
+
+<h3>Network Scanner</h3>
+
+<p>
+
+Python-based network scanner for
+device discovery,
+basic security auditing,
+and reporting.
+
+</p>
+
+<div class="project-tech">
+
+<span class="tech">Python</span>
+
+<span class="tech">Cybersecurity</span>
+
+<span class="tech">Linux</span>
+
+</div>
+
+<div class="project-actions">
+
+<a href="#"
+class="btn btn-primary project-open">
+
+Details
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+GitHub
+
+</a>
+
+<a href="#"
+class="btn btn-secondary">
+
+Live Demo
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+GITHUB API SECTION
+========================================== -->
+
+<section id="github">
+
+<h2 class="section-title">
+
+GitHub <span>Activity</span>
+
+</h2>
+
+<p class="section-sub">
+
+Live GitHub profile information fetched using the
+GitHub REST API with automatic repository updates.
+
+</p>
+
+<div class="github-grid">
+
+<div class="github-profile glass">
+
+<img id="githubAvatar"
+src="profile.jpg"
+alt="GitHub Avatar">
+
+<h3 id="githubName">
+
+Loading...
+
+</h3>
+
+<p id="githubBio">
+
+Fetching GitHub profile...
+
+</p>
+
+<div class="github-stats">
+
+<div class="github-stat">
+
+<h4 id="followers">
+
+0
+
+</h4>
+
+Followers
+
+</div>
+
+<div class="github-stat">
+
+<h4 id="following">
+
+0
+
+</h4>
+
+Following
+
+</div>
+
+<div class="github-stat">
+
+<h4 id="repositories">
+
+0
+
+</h4>
+
+Repositories
+
+</div>
+
+<div class="github-stat">
+
+<h4 id="stars">
+
+0
+
+</h4>
+
+Stars
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<h3 style="margin-bottom:20px;">
+
+Latest Repositories
+
+</h3>
+
+<div class="repo-grid"
+
+id="repoContainer">
+
+<!-- GitHub API Inserts Repository Cards -->
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CERTIFICATIONS
+========================================== -->
+
+<section id="certifications">
+
+<h2 class="section-title">
+
+My <span>Certifications</span>
+
+</h2>
+
+<p class="section-sub">
+
+Courses and certifications that strengthened my
+technical knowledge and practical skills.
+
+</p>
+
+<div class="cert-grid">
+
+<div class="cert-card glass">
+
+<i class="fa-solid fa-certificate"></i>
+
+<h3>Python Programming</h3>
+
+<p>
+
+Professional Python programming certification.
+
+</p>
+
+</div>
+
+<div class="cert-card glass">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Cybersecurity</h3>
+
+<p>
+
+Fundamentals of cybersecurity and ethical hacking.
+
+</p>
+
+</div>
+
+<div class="cert-card glass">
+
+<i class="fa-solid fa-brain"></i>
+
+<h3>Artificial Intelligence</h3>
+
+<p>
+
+Machine learning and AI foundations.
+
+</p>
+
+</div>
+
+<div class="cert-card glass">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Web Development</h3>
+
+<p>
+
+Responsive frontend development certification.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+ACHIEVEMENTS
+========================================== -->
+
+<section id="achievements">
+
+<h2 class="section-title">
+
+My <span>Achievements</span>
+
+</h2>
+
+<p class="section-sub">
+
+Some milestones from my learning journey.
+
+</p>
+
+<div class="achievement-grid">
+
+<div class="achievement glass">
+
+<div class="counter"
+
+data-target="25">
+
+0
+
+</div>
+
+Projects Completed
+
+</div>
+
+<div class="achievement glass">
+
+<div class="counter"
+
+data-target="15">
+
+0
+
+</div>
+
+Certificates
+
+</div>
+
+<div class="achievement glass">
+
+<div class="counter"
+
+data-target="500">
+
+0
+
+</div>
+
+Coding Problems
+
+</div>
+
+<div class="achievement glass">
+
+<div class="counter"
+
+data-target="1000">
+
+0
+
+</div>
+
+GitHub Commits
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SERVICES
+========================================== -->
+
+<section id="services">
+
+<h2 class="section-title">
+
+My <span>Services</span>
+
+</h2>
+
+<p class="section-sub">
+
+Services that I provide for clients and projects.
+
+</p>
+
+<div class="service-grid">
+
+<div class="service-card glass">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>Web Development</h3>
+
+<p>
+
+Modern responsive websites with clean UI,
+animations and performance optimization.
+
+</p>
+
+</div>
+
+<div class="service-card glass">
+
+<i class="fa-brands fa-python"></i>
+
+<h3>Python Development</h3>
+
+<p>
+
+Automation,
+desktop applications,
+APIs,
+and custom software solutions.
+
+</p>
+
+</div>
+
+<div class="service-card glass">
+
+<i class="fa-solid fa-shield-virus"></i>
+
+<h3>Cybersecurity</h3>
+
+<p>
+
+Security awareness,
+basic auditing,
+Linux tools
+and secure coding.
+
+</p>
+
+</div>
+
+<div class="service-card glass">
+
+<i class="fa-solid fa-robot"></i>
+
+<h3>AI Solutions</h3>
+
+<p>
+
+AI integrations,
+chatbots,
+automation,
+and intelligent applications.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+TESTIMONIALS
+========================================== -->
+
+<section id="testimonials">
+
+<h2 class="section-title">
+
+Client <span>Testimonials</span>
+
+</h2>
+
+<p class="section-sub">
+
+Feedback from collaborators, mentors and clients.
+
+</p>
+
+<div class="testimonial-wrapper">
+
+<div class="testimonial glass">
+
+<img src="https://i.pravatar.cc/150?img=11"
+alt="Client">
+
+<h3>Alex Johnson</h3>
+
+<h4>Software Engineer</h4>
+
+<p>
+
+"Vivek delivers clean, professional code with
+excellent UI design and attention to detail."
+
+</p>
+
+★★★★★
+
+</div>
+
+<div class="testimonial glass">
+
+<img src="https://i.pravatar.cc/150?img=32"
+alt="Client">
+
+<h3>Sarah Wilson</h3>
+
+<h4>Project Manager</h4>
+
+<p>
+
+"Highly motivated developer who quickly learns
+new technologies and consistently exceeds
+expectations."
+
+</p>
+
+★★★★★
+
+</div>
+
+<div class="testimonial glass">
+
+<img src="https://i.pravatar.cc/150?img=25"
+alt="Client">
+
+<h3>Michael Brown</h3>
+
+<h4>Cybersecurity Mentor</h4>
+
+<p>
+
+"Excellent problem-solving skills and a strong
+foundation in Python, cybersecurity and AI."
+
+</p>
+
+★★★★★
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+BLOG
+========================================== -->
+
+<section id="blog">
+
+<h2 class="section-title">
+
+Latest <span>Articles</span>
+
+</h2>
+
+<p class="section-sub">
+
+Sharing knowledge about development,
+AI, cybersecurity and modern technologies.
+
+</p>
+
+<div class="blog-grid">
+
+<div class="blog-card glass">
+
+<img
+src="https://picsum.photos/700/450?random=30"
+alt="Blog">
+
+<div class="blog-content">
+
+<h3>Building Modern Web Applications</h3>
+
+<p>
+
+Learn how modern frontend technologies improve
+performance, accessibility and user experience.
+
+</p>
+
+<a href="#" class="btn btn-primary">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card glass">
+
+<img
+src="https://picsum.photos/700/450?random=31"
+alt="Blog">
+
+<div class="blog-content">
+
+<h3>Cybersecurity Essentials</h3>
+
+<p>
+
+Understanding common security threats and how
+developers can build safer applications.
+
+</p>
+
+<a href="#" class="btn btn-primary">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+<div class="blog-card glass">
+
+<img
+src="https://picsum.photos/700/450?random=32"
+alt="Blog">
+
+<div class="blog-content">
+
+<h3>Introduction to Artificial Intelligence</h3>
+
+<p>
+
+A beginner-friendly overview of AI,
+machine learning and future opportunities.
+
+</p>
+
+<a href="#" class="btn btn-primary">
+
+Read More
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CONTACT
+========================================== -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Get In <span>Touch</span>
+
+</h2>
+
+<p class="section-sub">
+
+Interested in working together?
+Let's build something amazing.
+
+</p>
+
+<div class="contact-grid">
+
+<div class="contact-form glass">
+
+<form id="contactForm">
+
+<input
+type="text"
+placeholder="Your Name"
+required>
+
+<input
+type="email"
+placeholder="Your Email"
+required>
+
+<input
+type="text"
+placeholder="Subject"
+required>
+
+<textarea
+placeholder="Your Message"
+required></textarea>
+
+<button
+type="submit"
+class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+<div class="contact-info glass">
+
+<div class="contact-item">
+
+<i class="fas fa-envelope"></i>
+
+<div>
+
+<h3>Email</h3>
+
+<p>
+
+your@email.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fas fa-phone"></i>
+
+<div>
+
+<h3>Phone</h3>
+
+<p>
+
++91 XXXXXXXXXX
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fas fa-location-dot"></i>
+
+<div>
+
+<h3>Location</h3>
+
+<p>
+
+Kerala, India
+
+</p>
+
+</div>
+
+</div>
+
+<div class="contact-item">
+
+<i class="fab fa-github"></i>
+
+<div>
+
+<h3>GitHub</h3>
+
+<p>
+
+github.com/YOUR_USERNAME
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+FOOTER
+========================================== -->
+
+<footer>
+
+<h2>
+
+Vivek PK
+
+</h2>
+
+<p>
+
+Building premium software,
+beautiful interfaces,
+and intelligent solutions.
+
+</p>
+
+<div class="social-links">
+
+<a href="#"><i class="fab fa-github"></i></a>
+
+<a href="#"><i class="fab fa-linkedin"></i></a>
+
+<a href="#"><i class="fab fa-x-twitter"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+<p>
+
+© 2026 Vivek PK.
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ==========================================
+LIGHTBOX
+========================================== -->
+
+<div class="lightbox" id="lightbox">
+
+<img
+id="lightboxImage"
+src=""
+alt="Preview">
+
+</div>
+
+<!-- ==========================================
+PROJECT MODAL
+========================================== -->
+
+<div class="modal"
+
+id="projectModal">
+
+<div class="modal-content glass">
+
+<h2 id="modalTitle">
+
+Project Title
+
+</h2>
+
+<p id="modalDescription">
+
+Project description will appear here.
+
+</p>
+
+<button
+class="btn btn-primary"
+id="closeModal">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+ 
+// ==========================================
+// LEGENDARY PORTFOLIO
+// MAIN JAVASCRIPT - PART 1
+// ==========================================
+
+// ---------- EDITABLE ----------
+const GITHUB_USERNAME = "YOUR_USERNAME";
+// ------------------------------
+
+const loader = document.getElementById("loader");
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loader.classList.add("hidden");
+    }, 1200);
+});
+
+// ==========================================
+// Scroll Progress Bar
+// ==========================================
+
+const progressBar = document.querySelector(".progress");
+
+window.addEventListener("scroll", () => {
+
+    const scrollTop = window.scrollY;
+
+    const height =
+        document.documentElement.scrollHeight -
+        window.innerHeight;
+
+    progressBar.style.width =
+        (scrollTop / height) * 100 + "%";
 
 });
 
+// ==========================================
+// Cursor Glow
+// ==========================================
 
+const cursor = document.querySelector(".cursor");
 
+window.addEventListener("mousemove", e => {
 
+    cursor.style.left = e.clientX + "px";
+    cursor.style.top = e.clientY + "px";
 
-/* =====================================
-TYPING EFFECT
-===================================== */
+});
 
+// ==========================================
+// Typewriter Effect
+// ==========================================
 
-const roles=[
+const roles = [
 
-"Software Developer",
-
-"Python Programmer",
-
-"Cybersecurity Enthusiast",
-
-"Future AI Engineer"
+    "Python Developer",
+    "Cybersecurity Enthusiast",
+    "AI Learner",
+    "Frontend Developer",
+    "Open Source Contributor",
+    "BCA Student"
 
 ];
 
+let roleIndex = 0;
+let charIndex = 0;
+let deleting = false;
 
-let roleIndex=0;
+const typing = document.getElementById("typing");
 
-let charIndex=0;
+function typeWriter() {
 
+    const current = roles[roleIndex];
 
-const typing=document.createElement("span");
+    if (!deleting) {
 
+        typing.textContent =
+            current.substring(0, charIndex++);
 
-const heroTitle=document.querySelector(".hero h2");
+        if (charIndex > current.length) {
 
+            deleting = true;
 
-function typeEffect(){
+            setTimeout(typeWriter, 1500);
 
+            return;
 
-if(charIndex < roles[roleIndex].length){
+        }
 
-heroTitle.textContent += roles[roleIndex].charAt(charIndex);
+    } else {
 
-charIndex++;
+        typing.textContent =
+            current.substring(0, charIndex--);
 
-setTimeout(typeEffect,100);
+        if (charIndex < 0) {
 
+            deleting = false;
 
-}
+            roleIndex =
+                (roleIndex + 1) % roles.length;
 
-else{
+        }
 
+    }
 
-setTimeout(()=>{
-
-heroTitle.textContent="";
-
-charIndex=0;
-
-
-roleIndex++;
-
-
-if(roleIndex>=roles.length){
-
-roleIndex=0;
-
-}
-
-
-typeEffect();
-
-
-},1500);
-
+    setTimeout(typeWriter,
+        deleting ? 40 : 90);
 
 }
 
+typeWriter();
 
-}
+// ==========================================
+// Reveal on Scroll
+// ==========================================
 
-
-typeEffect();
-
-
-
-
-
-
-/* =====================================
-PARTICLE BACKGROUND
-===================================== */
-
-
-const canvas=document.createElement("canvas");
-
-canvas.id="particles";
-
-
-document.body.appendChild(canvas);
-
-
-
-const ctx=canvas.getContext("2d");
-
-
-canvas.width=window.innerWidth;
-
-canvas.height=window.innerHeight;
-
-
-
-let particles=[];
-
-
-for(let i=0;i<100;i++){
-
-
-particles.push({
-
-x:Math.random()*canvas.width,
-
-y:Math.random()*canvas.height,
-
-size:Math.random()*3,
-
-speedX:(Math.random()-.5),
-
-speedY:(Math.random()-.5)
-
-
-});
-
-
-}
-
-
-
-
-function animateParticles(){
-
-
-ctx.clearRect(
-0,
-0,
-canvas.width,
-canvas.height
-);
-
-
-
-particles.forEach(p=>{
-
-
-ctx.beginPath();
-
-
-ctx.arc(
-p.x,
-p.y,
-p.size,
-0,
-Math.PI*2
-);
-
-
-ctx.fillStyle="#00E5FF";
-
-
-ctx.fill();
-
-
-
-p.x+=p.speedX;
-
-p.y+=p.speedY;
-
-
-
-if(
-p.x<0||
-p.x>canvas.width
-)
-
-p.speedX*=-1;
-
-
-
-if(
-p.y<0||
-p.y>canvas.height
-)
-
-p.speedY*=-1;
-
-
-
-});
-
-
-
-requestAnimationFrame(
-animateParticles
-);
-
-
-}
-
-
-animateParticles();
-
-
-
-
-window.addEventListener(
-"resize",
-()=>{
-
-
-canvas.width=window.innerWidth;
-
-canvas.height=window.innerHeight;
-
-
-});
-
-
-
-
-
-
-
-/* =====================================
-CUSTOM CURSOR
-===================================== */
-
-
-const cursor=document.createElement("div");
-
-
-cursor.className="cursor";
-
-
-document.body.appendChild(cursor);
-
-
-
-document.addEventListener(
-"mousemove",
-(e)=>{
-
-
-cursor.style.left=e.clientX+"px";
-
-cursor.style.top=e.clientY+"px";
-
-
-});
-
-
-
-
-
-
-
-/* =====================================
-SCROLL REVEAL
-===================================== */
-
-
-const revealElements=document.querySelectorAll(
-".glass"
-);
-
-
-
-const observer=new IntersectionObserver(
+const observer = new IntersectionObserver(
 
 (entries)=>{
 
-
 entries.forEach(entry=>{
-
 
 if(entry.isIntersecting){
 
+entry.target.animate([
 
-entry.target.style.opacity="1";
+{
+opacity:0,
+transform:"translateY(70px)"
+},
 
-entry.target.style.transform=
-"translateY(0)";
+{
+opacity:1,
+transform:"translateY(0)"
+}
 
+],
+
+{
+duration:700,
+fill:"forwards"
+});
 
 }
 
-
 });
-
 
 },
 
 {
-
 threshold:.15
+}
+
+);
+
+document.querySelectorAll("section,.glass")
+.forEach(el=>observer.observe(el));
+
+// ==========================================
+// Animate Skill Bars
+// ==========================================
+
+const bars =
+document.querySelectorAll(".progress-fill");
+
+const skillObserver =
+new IntersectionObserver(
+
+(entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.width =
+entry.target.dataset.width;
 
 }
 
+});
+
+},
+
+{
+threshold:.3
+}
 
 );
 
+bars.forEach(bar=>skillObserver.observe(bar));
 
+// ==========================================
+// Animated Counters
+// ==========================================
 
-revealElements.forEach(el=>{
+const counters =
+document.querySelectorAll(".counter");
 
+const counterObserver =
+new IntersectionObserver(
 
-el.style.opacity="0";
+(entries)=>{
 
-el.style.transform="translateY(40px)";
+entries.forEach(entry=>{
 
-el.style.transition="0.8s";
+if(!entry.isIntersecting) return;
 
+const counter = entry.target;
 
-observer.observe(el);
+const target =
++counter.dataset.target;
 
+let count = 0;
+
+const speed =
+target / 80;
+
+const update = ()=>{
+
+count += speed;
+
+if(count < target){
+
+counter.innerText =
+Math.floor(count);
+
+requestAnimationFrame(update);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+update();
 
 });
 
+});
 
+counters.forEach(counter=>
+counterObserver.observe(counter));
 
+// ==========================================
+// Project Filter
+// ==========================================
 
+const filterButtons =
+document.querySelectorAll(".filter-btn");
 
+const projects =
+document.querySelectorAll(".project-card");
 
+filterButtons.forEach(button=>{
 
-/* =====================================
-SKILL BAR ANIMATION
-===================================== */
+button.addEventListener("click",()=>{
 
+filterButtons.forEach(btn=>
+btn.classList.remove("active"));
 
-const skillBars=document.querySelectorAll(
-".skill-progress"
-);
+button.classList.add("active");
 
+const filter =
+button.dataset.filter;
 
+projects.forEach(card=>{
 
-skillBars.forEach(bar=>{
+if(
 
+filter==="all" ||
 
-let value=bar.style.width;
+card.dataset.category===filter
 
+){
 
-bar.style.width="0";
+card.style.display="block";
 
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+});
+
+});
+
+// ==========================================
+// Image Lightbox
+// ==========================================
+
+const lightbox =
+document.getElementById("lightbox");
+
+const lightboxImage =
+document.getElementById("lightboxImage");
+
+document
+.querySelectorAll(".project-image img")
+.forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+lightbox.style.display="flex";
+
+lightboxImage.src=img.src;
+
+});
+
+});
+
+lightbox.onclick=()=>{
+
+lightbox.style.display="none";
+
+};
+
+// ==========================================
+// Project Modal
+// ==========================================
+
+const modal =
+document.getElementById("projectModal");
+
+const modalTitle =
+document.getElementById("modalTitle");
+
+const modalDescription =
+document.getElementById("modalDescription");
+
+const closeModal =
+document.getElementById("closeModal");
+
+document
+.querySelectorAll(".project-open")
+.forEach((button,index)=>{
+
+button.addEventListener("click",(e)=>{
+
+e.preventDefault();
+
+const card =
+button.closest(".project-card");
+
+modalTitle.textContent =
+card.querySelector("h3").textContent;
+
+modalDescription.textContent =
+card.querySelector("p").textContent;
+
+modal.style.display="flex";
+
+});
+
+});
+
+closeModal.onclick=()=>{
+
+modal.style.display="none";
+
+};
+
+window.addEventListener("click",(e)=>{
+
+if(e.target===modal){
+
+modal.style.display="none";
+
+}
+
+});
+
+// ==========================================
+// Mobile Navigation
+// ==========================================
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const nav =
+document.getElementById("navbar");
+
+menuBtn.addEventListener("click",()=>{
+
+if(nav.style.display==="flex"){
+
+nav.style.display="none";
+
+}else{
+
+nav.style.display="flex";
+
+nav.style.flexDirection="column";
+nav.style.position="absolute";
+nav.style.top="80px";
+nav.style.right="20px";
+nav.style.padding="20px";
+nav.style.borderRadius="20px";
+nav.style.background="rgba(0,0,0,.95)";
+nav.style.backdropFilter="blur(20px)";
+nav.style.gap="18px";
+
+}
+
+});
+
+// ==========================================
+// Scroll Spy
+// ==========================================
+
+const sections =
+document.querySelectorAll("section");
+
+const navLinks =
+document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+let current="";
+
+sections.forEach(section=>{
+
+const top=
+section.offsetTop-120;
+
+if(scrollY>=top){
+
+current=section.id;
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+current){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+// ==========================================
+// Theme Switch
+// ==========================================
+
+const themeButton =
+document.createElement("button");
+
+themeButton.innerHTML=
+'<i class="fas fa-moon"></i>';
+
+themeButton.className="btn btn-secondary";
+
+themeButton.style.position="fixed";
+themeButton.style.right="25px";
+themeButton.style.bottom="25px";
+themeButton.style.zIndex="99999";
+
+document.body.appendChild(themeButton);
+
+if(localStorage.getItem("theme")==="light"){
+
+document.body.classList.add("light");
+
+themeButton.innerHTML=
+'<i class="fas fa-sun"></i>';
+
+}
+
+themeButton.onclick=()=>{
+
+document.body.classList.toggle("light");
+
+if(document.body.classList.contains("light")){
+
+localStorage.setItem("theme","light");
+
+themeButton.innerHTML=
+'<i class="fas fa-sun"></i>';
+
+}else{
+
+localStorage.setItem("theme","dark");
+
+themeButton.innerHTML=
+'<i class="fas fa-moon"></i>';
+
+}
+
+};
+
+// ==========================================
+// Toast Notification
+// ==========================================
+
+function toast(message){
+
+const t=document.createElement("div");
+
+t.textContent=message;
+
+t.style.position="fixed";
+t.style.bottom="100px";
+t.style.right="25px";
+t.style.padding="15px 22px";
+t.style.borderRadius="14px";
+t.style.background="#00E5FF";
+t.style.color="#000";
+t.style.fontWeight="700";
+t.style.zIndex="999999";
+
+document.body.appendChild(t);
 
 setTimeout(()=>{
 
+t.remove();
 
-bar.style.width=value;
+},2500);
 
+}
 
-},500);
+document
+.getElementById("contactForm")
+.addEventListener("submit",(e)=>{
 
+e.preventDefault();
 
+toast("Message Sent Successfully!");
 
 });
 
+// ==========================================
+// GitHub API
+// ==========================================
 
+async function loadGithub(){
 
+try{
 
+const profile=
+await fetch(
+`https://api.github.com/users/${GITHUB_USERNAME}`
+);
 
+const data=
+await profile.json();
 
+document.getElementById("githubAvatar").src=
+data.avatar_url;
 
-/* =====================================
-AI ASSISTANT
-===================================== */
+document.getElementById("githubName").textContent=
+data.name||data.login;
 
+document.getElementById("githubBio").textContent=
+data.bio||"No bio available";
 
-const sendButton=
-document.getElementById("sendMessage");
+document.getElementById("followers").textContent=
+data.followers;
 
+document.getElementById("following").textContent=
+data.following;
 
-const userInput=
-document.getElementById("userMessage");
+document.getElementById("repositories").textContent=
+data.public_repos;
 
+const repoRequest=
+await fetch(data.repos_url);
 
-const chat=
-document.getElementById("chatMessages");
+const repos=
+await repoRequest.json();
 
+let stars=0;
 
+repos.forEach(repo=>{
 
-function aiReply(message){
+stars+=repo.stargazers_count;
 
+});
 
-message=message.toLowerCase();
+document.getElementById("stars").textContent=
+stars;
 
+const container=
+document.getElementById("repoContainer");
 
+repos.slice(0,6).forEach(repo=>{
 
-if(message.includes("who")){
+container.innerHTML+=`
 
-return "Vivek PK is a BCA student, software developer and cybersecurity enthusiast.";
+<div class="repo-card glass">
 
-}
+<h3>${repo.name}</h3>
 
+<p>${repo.description||"No description available."}</p>
 
-if(message.includes("skill")){
+<span class="language-tag">
 
-return "Vivek's skills include Python, C, HTML, CSS, JavaScript and cybersecurity learning.";
+${repo.language||"Unknown"}
 
-}
+</span>
 
+<br><br>
 
+<a
+href="${repo.html_url}"
+target="_blank"
+class="btn btn-primary">
 
-if(message.includes("project")){
+Repository
 
-return "Vivek builds web projects, Python applications and technology experiments.";
-
-}
-
-
-
-if(message.includes("contact")){
-
-return "You can contact Vivek through email: vivekpk203@gmail.com";
-
-}
-
-
-
-return "I am still learning, but I can help you explore Vivek's portfolio.";
-
-}
-
-
-
-
-sendButton.addEventListener(
-"click",
-()=>{
-
-
-let message=userInput.value;
-
-
-
-if(message.trim()=="")
-return;
-
-
-
-chat.innerHTML +=`
-
-<div class="bot-message">
-
-<b>You:</b> ${message}
-
-</div>
-
-
-<div class="bot-message">
-
-${aiReply(message)}
+</a>
 
 </div>
 
 `;
 
-
-
-userInput.value="";
-
-chat.scrollTop=chat.scrollHeight;
-
-
-
 });
 
+}catch(error){
 
+console.log(error);
 
-
-
-
-
-/* =====================================
-CONTACT FORM
-===================================== */
-
-
-document
-.getElementById("contactForm")
-.addEventListener(
-"submit",
-(e)=>{
-
-
-e.preventDefault();
-
-
-alert(
-"Message submitted successfully! Backend can be connected here."
-);
-
-
-});
-
-
-
-
-
-
-
-/* =====================================
-SECRET KEYBOARD EASTER EGG
-===================================== */
-
-
-let secret="";
-
-
-
-document.addEventListener(
-"keydown",
-(e)=>{
-
-
-secret+=e.key.toLowerCase();
-
-
-
-if(secret.includes("vivek")){
-
-
-document.body.style.animation=
-"pulse 1s";
-
-
-alert(
-"🚀 Welcome to Vivek's hidden developer mode!"
-);
-
-
-secret="";
-
+toast("GitHub API unavailable");
 
 }
 
+}
+
+loadGithub();
+
+// ==========================================
+// Simulated GitHub Contribution Calendar
+// ==========================================
+
+function generateContributionCalendar() {
+
+    const githubSection = document.getElementById("github");
+
+    const title = document.createElement("h3");
+    title.textContent = "Contribution Activity";
+    title.style.marginTop = "50px";
+    title.style.marginBottom = "20px";
+
+    const calendar = document.createElement("div");
+
+    calendar.style.display = "grid";
+    calendar.style.gridTemplateColumns = "repeat(53,12px)";
+    calendar.style.gap = "4px";
+    calendar.style.justifyContent = "center";
+    calendar.style.marginTop = "20px";
+
+    for(let i=0;i<371;i++){
+
+        const cell=document.createElement("div");
+
+        const level=Math.floor(Math.random()*5);
+
+        const colors=[
+            "#161b22",
+            "#0e4429",
+            "#006d32",
+            "#26a641",
+            "#39d353"
+        ];
+
+        cell.style.width="12px";
+        cell.style.height="12px";
+        cell.style.borderRadius="2px";
+        cell.style.background=colors[level];
+        cell.title=`${level*3} Contributions`;
+
+        calendar.appendChild(cell);
+
+    }
+
+    githubSection.appendChild(title);
+    githubSection.appendChild(calendar);
+
+}
+
+generateContributionCalendar();
+
+// ==========================================
+// Magnetic Buttons
+// ==========================================
+
+document.querySelectorAll(".btn").forEach(button=>{
+
+button.addEventListener("mousemove",(e)=>{
+
+const rect=button.getBoundingClientRect();
+
+const x=e.clientX-rect.left-rect.width/2;
+const y=e.clientY-rect.top-rect.height/2;
+
+button.style.transform=
+`translate(${x*0.12}px,${y*0.12}px)`;
 
 });
 
+button.addEventListener("mouseleave",()=>{
+
+button.style.transform="translate(0,0)";
+
+});
+
+});
+
+// ==========================================
+// Simple Parallax
+// ==========================================
+
+window.addEventListener("scroll",()=>{
+
+const value=window.scrollY;
+
+document.body.style.backgroundPositionY=
+value*0.08+"px";
+
+});
+
+// ==========================================
+// Ripple Effect
+// ==========================================
+
+document.querySelectorAll(".btn").forEach(btn=>{
+
+btn.addEventListener("click",function(e){
+
+const ripple=document.createElement("span");
+
+const rect=this.getBoundingClientRect();
+
+const size=Math.max(rect.width,rect.height);
+
+ripple.style.position="absolute";
+ripple.style.width=size+"px";
+ripple.style.height=size+"px";
+ripple.style.left=e.clientX-rect.left-size/2+"px";
+ripple.style.top=e.clientY-rect.top-size/2+"px";
+ripple.style.borderRadius="50%";
+ripple.style.background="rgba(255,255,255,.35)";
+ripple.style.transform="scale(0)";
+ripple.style.pointerEvents="none";
+ripple.style.animation="ripple .6s linear";
+
+this.appendChild(ripple);
+
+setTimeout(()=>ripple.remove(),600);
+
+});
+
+});
+
+const rippleStyle=document.createElement("style");
+
+rippleStyle.innerHTML=`
+
+@keyframes ripple{
+
+to{
+
+transform:scale(4);
+
+opacity:0;
+
+}
+
+}
+
+`;
+
+document.head.appendChild(rippleStyle);
+
+// ==========================================
+// Debounce Utility
+// ==========================================
+
+function debounce(fn,delay){
+
+let timer;
+
+return function(){
+
+clearTimeout(timer);
+
+timer=setTimeout(()=>{
+
+fn.apply(this,arguments);
+
+},delay);
+
+};
+
+}
+
+// ==========================================
+// Throttle Utility
+// ==========================================
+
+function throttle(fn,limit){
+
+let waiting=false;
+
+return function(){
+
+if(!waiting){
+
+fn.apply(this,arguments);
+
+waiting=true;
+
+setTimeout(()=>{
+
+waiting=false;
+
+},limit);
+
+}
+
+};
+
+}
+
+// Example usage
+
+window.addEventListener(
+"resize",
+debounce(()=>{
+
+console.log("Window resized");
+
+},300)
+);
+
+// ==========================================
+// Lazy Loading Enhancement
+// ==========================================
+
+document
+.querySelectorAll("img")
+.forEach(img=>{
+
+img.loading="lazy";
+
+});
+
+// ==========================================
+// Keyboard Accessibility
+// ==========================================
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+modal.style.display="none";
+lightbox.style.display="none";
+
+}
+
+});
+
+// ==========================================
+// End of JavaScript
+// ==========================================
 
 </script>
+
+</body>
+
+</html>
